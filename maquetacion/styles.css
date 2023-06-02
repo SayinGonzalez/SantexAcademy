@@ -1,39 +1,203 @@
-
-
-
 html {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
 }
 
-p {
-    margin-right: 2em;
-    font-weight: bold;
-    font-size: 0.9em;
-    font-weight: 500;
+img#fondo {
+    width: 100%;
+    position: fixed;
+    top: -6.9em;
 }
 
-button {
+p {
+    font-size: 0.81em;
+    font-weight: 500;
+
+}
+
+body {
+    margin: 0;
+    overflow-y: scroll;
+}
+
+img#icon {
+    block-size: 0.75em;
+}
+
+
+/* --------------- Navbar --------------- */
+
+div#navbar {
+    display: flex;
+    border-bottom: 0.9px solid gray;
+    padding: 1.25em 2.69em;
+    height: 2.45em;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+}
+
+div#navbar-right {
+    display: flex;
+    align-items: baseline;
+    gap: 2.2em;
+}
+
+div#navbar-right-pages {
+    display: flex;
+    gap: 2.2em;
+}
+
+div#navbar-right-pages button {
     background-color: white;
     border-radius: 30px;
-    padding: 0px 1.5em;
-    height: 2.5em;
+    height: 2.8em;
     border: 2px solid black;
     font-size: 0.8em;
-    width: 8em;
+    font-weight: 500;
+    width: 7.81em;
+    align-self: center;
 }
 
-div#navbar-left img {
-    width: 8em;
+div#navbar-right-icons {
+    display: flex;
+    gap: 1.25em;
 }
 
-@media (width >= 2500px) {
+/* --------------- Body Page --------------- */
+
+div#body  {
+    display: flex;
+    position: absolute;
+    padding-top: 4.4em;
+    flex-direction: column;
+    align-items: center;
+    width: -webkit-fill-available;
+    top: 5em;
+    background-color: white;
+}
+
+div#text{
+    width: 35em;
+    margin-bottom: 1.25em;
+}
+
+p#description{
+    margin-top: 0.36em;
+    margin-bottom: 0.536em;
+    font-size: 1.75em;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.0143em;
+    line-height: 1.2;
+    color: #201b24;
+}
+
+div#buttons{
+    display: flex;
+    margin-bottom: 1.25em;
+    gap: 1.25em;
+}
+
+button#contactanos-body{
+    display: flex;
+    background-color: white;
+    height: 3.2em;
+    width: 11.544em;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 0.75em;
+    font-weight: 500;
+    padding: 0.781em 1.562em;
+}
+
+img#icon-flecha{
+    block-size: 0.8em;
+    margin-left: 0.5em;
+    align-self: center;
+}
+
+img#icon-suma{
+    block-size: 1.1em;
+    margin-left: 0.5em;
+    align-self: baseline;
+}
+
+button#sumate-body{
+    display: flex;
+    background-color: white;
+    height: 3.2em;
+    width: 8.991em;
+    border-radius: 20px;
+    border: 2px solid #6b53f0;
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #6b53f0;
+    padding: 0.781em 1.562em;
+}
+
+
+/* --------------- Footer --------------- */
+
+div#footer {
+    display: flex;
+    height: 4.625em;
+    width: -webkit-fill-available;
+    padding: 3.75em 2.63em 2.5em;
+    position: absolute;
+    bottom: 0px;
+    background-color: #25202a;
+    gap: 4.05em;
+}
+
+div#footer-left{
+    display: flex;
+    gap: 4.58em;
+}
+
+div#text-description{
+    width: 15em;
+}
+
+p#text-description-footer{
+    margin: 0em;
+    font-size: 0.75em;
+    font-weight: normal;
+    line-height: 1.5em;
+    color: #d9d9d9;
+}
+
+div#footer-right{
+    display: flex;
+}
+
+div#text-page{
+    width: 13em;
+}
+
+p#text-page{
+    margin: 0em 0.5em;
+    font-size: 0.875em;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #d9d9d9;
+}
+
+div#icon-text-page{
+    display: flex;
+    margin-left: 0.5em;
+    align-items: baseline;
+}
+
+@media (width >=2500px) {
     html {
         font-size: 28px;
     }
 }
 
-@media (width >= 3500px) {
+@media (width >=3500px) {
     html {
         font-size: 32px;
     }
